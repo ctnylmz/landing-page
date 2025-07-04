@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --primary: #473BF0;
+    --white: #fff;
+    --dark: #161C2D;
+    --bg-dark: #161C2D;
+    --green: #68D585;
+    --bg-white: #F4F7FA;
+    --bg-light: #ECF2F7;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+/* Header */
+header #header {
+    padding: 16px 0;
+    background-color: var(--bg-dark);
+}
+
+header #header .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header #header .header-wrapper .header-title h1 a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+
+header #header .header-wrapper .header-navbar {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+header #header .header-wrapper .header-navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+header #header .header-wrapper .header-navbar ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--white);
+
+}
+
+header #header .header-wrapper .header-navbar .btn {
+    text-decoration: none;
+    background-color: var(--primary);
+    font-weight: 700;
+    color: var(--bg-white);
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+/* topContent */
+
+main #topContent {
+    padding: 64px 0;
+    background-color: var(--bg-dark);
+}
+
+main #topContent .topContent-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 135px;
+}
+
+main #topContent .topContent-wrapper .topContent-text .topContent-title {
+    color: var(--white);
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+main #topContent .topContent-wrapper .topContent-text .topContent-text {
+    color: var(--white);
+    font-size: 16px;
+    margin-top: 32px;
+    line-height: 1.3;
+}
+
+
+main #topContent .topContent-wrapper .topContent-text .topContent-btn a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 16px;
+    color: var(--green);
+
+}
+
+
+main #topContent .topContent-wrapper .topcontent-img {
+    position: relative;
+}
+
+main #topContent .topContent-wrapper .topcontent-img #play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    width: 92px;
+    height: 92px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background:var(--white);
+    cursor: pointer;
+    color: var(--primary);
+}
