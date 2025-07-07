@@ -164,7 +164,7 @@ main #brand .brand-wrapper{
 
 main #brand .brand-wrapper img:hover{
     background-color: var(--green);
-    padding: 5px 0;
+    padding: 2px 0;
 }
 
 /* info */
@@ -209,4 +209,30 @@ main #info .info-wrapper .info-card .info-text .info-description{
     line-height: 29px;
     letter-spacing: -0.2px;
     color: #161c2db3;
+}
+
+/* Advanced */
+
+main #advanced {
+  padding: 65px 0;
+}
+
+main #advanced .advanced-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+
+/* Feature */
+main #feature {
+  padding: 65px 0;
+}
+
+main #feature .feature-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
 }
