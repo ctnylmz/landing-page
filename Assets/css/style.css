@@ -256,8 +256,8 @@ main #advanced .advanced-wrapper .advanced-context .btn a {
     text-decoration: none;
 }
 
-main #advanced .advanced-wrapper .advanced-context .btn a span{
-     color: var(--primary);
+main #advanced .advanced-wrapper .advanced-context .btn a span {
+    color: var(--primary);
     font-size: 21px;
     font-weight: 700;
     letter-spacing: -1.2px;
@@ -265,7 +265,7 @@ main #advanced .advanced-wrapper .advanced-context .btn a span{
 }
 
 main #advanced .advanced-wrapper .advanced-context .btn i {
-     color: var(--primary);
+    color: var(--primary);
     font-size: 22px;
 }
 
@@ -286,7 +286,7 @@ main #feature .feature-wrapper {
 
 main #feature .feature-wrapper .feature-img img {
     border-radius: 8px;
-     filter: drop-shadow(0px 31px 34px rgba(0, 0, 0, 0.0942963));
+    filter: drop-shadow(0px 31px 34px rgba(0, 0, 0, 0.0942963));
 }
 
 main #feature .feature-wrapper .feature-context .title {
@@ -317,8 +317,8 @@ main #feature .feature-wrapper .feature-context .btn a {
     text-decoration: none;
 }
 
-main #feature .feature-wrapper .feature-context .btn a span{
-     color: var(--primary);
+main #feature .feature-wrapper .feature-context .btn a span {
+    color: var(--primary);
     font-size: 21px;
     font-weight: 700;
     letter-spacing: -1.2px;
@@ -326,7 +326,7 @@ main #feature .feature-wrapper .feature-context .btn a span{
 }
 
 main #feature .feature-wrapper .feature-context .btn i {
-     color: var(--primary);
+    color: var(--primary);
     font-size: 22px;
 }
 
@@ -334,7 +334,6 @@ main #feature .feature-wrapper .feature-context .btn i {
 
 
 /* Price */
-
 main #price {
     padding: 65px 0;
     background-color: var(--bg-light);
@@ -344,17 +343,109 @@ main #price .price-content {
     text-align: center;
 }
 
+main #price .price-content .title {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: -1.2px;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+main #price .price-content .description {
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    line-height: 28px;
+    margin-bottom: 50px;
+    color: #161c2db3;
+    max-width: 690px;
+    display: inline-block;
+}
+
 main #price .price-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
+
+main #price .price-wrapper .price-card {
+    background-color: white;
+    padding: 20px 40px;
+}
+
+main #price .price-wrapper .price-card {
+    background-color: white;
+}
+
+main #price .price-wrapper .price-card .title {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+main #price .price-wrapper .price-card .price {
+    margin-bottom: 16px;
+}
+
+main #price .price-wrapper .price-card .price span {
+    font-weight: bold;
+    font-size: 42px;
+}
+
+
+main #price .price-wrapper .price-card .list ul {
+    list-style: none;
+
+}
+
+main #price .price-wrapper .price-card .list ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+main #price .price-wrapper .price-card .list ul li span i {
+    color: var(--green);
+}
+
+main #price .price-wrapper .price-card .btn {
+     margin-bottom: 16px;
+}
+
+main #price .price-wrapper .price-card .btn a {
+    text-decoration: none;
+    background-color: #e5e4f5;
+    color: var(--primary);
+    display: inline-block;
+    padding: 12px 24px;
+}
+
+main #price .price-wrapper .price-card .btn a.active{
+    text-decoration: none;
+    background-color: var(--primary);
+    color: var(--bg-white);
+    display: inline-block;
+    padding: 12px 24px;
+}
+
+main #price .price-wrapper .price-card .footer p {
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    color: #161c2db3;
+
+}
+
+
 
 /* Comment */
 
 main #comment {
     padding: 65px 0;
-     background-color: var(--bg-light);
+    background-color: var(--bg-light);
 }
 
 main #comment .comment-wrapper {
