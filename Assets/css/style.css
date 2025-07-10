@@ -440,7 +440,6 @@ main #price .price-wrapper .price-card .footer p {
 }
 
 
-
 /* Comment */
 
 main #comment {
@@ -453,4 +452,16 @@ main #comment .comment-wrapper {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+}
+
+main #comment .comment-wrapper .card .title{
+ font-size: 24px;
+ font-weight: bold;
+ margin-bottom: 20px;
+
+}
+
+main #comment .comment-wrapper .card .name{
+ font-size: 17px;
+
 }
