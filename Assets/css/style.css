@@ -472,7 +472,7 @@ main #price .price-wrapper .price-card .footer p {
 /* Comment */
 
 main #comment {
-    padding: 65px 0;
+    padding: 0px 0 130px 0;
     background-color: var(--bg-light);
 }
 
@@ -480,18 +480,28 @@ main #comment .comment-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 97px;
 }
 
 main #comment .comment-wrapper .card .title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    letter-spacing: -0.5px;
+    line-height: 34px;
+    color: var(--bg-dark);
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 
 }
 
 main #comment .comment-wrapper .card .name {
     font-size: 17px;
+    color: #161c2db3;
+    font-weight: 500px;
 
 }
 
@@ -500,20 +510,23 @@ main #comment .comment-wrapper .card .name {
 /* Footer - header*/
 
 footer #footer-header {
-    padding: 30px 0 0 0;
+    padding: 60px 0 70px 0;
     background-color: var(--bg-dark);
+ 
 }
 
 footer #footer-header .footer-header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 footer #footer-header .footer-header-wrapper .card .title {
     color: var(--gray);
-    font-size: 18px;
-    margin-bottom: 16px;
+    font-size: 15px;
+    font-weight: 400px;
+    margin-bottom: 20px;
 }
 
 footer #footer-header .footer-header-wrapper .card ul {
@@ -521,12 +534,16 @@ footer #footer-header .footer-header-wrapper .card ul {
 }
 
 footer #footer-header .footer-header-wrapper .card ul li {
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 footer #footer-header .footer-header-wrapper .card ul li a {
-    color: var(--white);
+     color: var(--white);
+    font-size: 17px;
+    font-weight: 400px;
     text-decoration: none;
+    line-height: 20px;
+    letter-spacing: -0.2px;
 }
 
 /* Footer - footer*/
@@ -541,20 +558,31 @@ footer #footer-footer .footer-footer-wrapper {
     align-items: center;
     border-top: 1px solid var(--bg-light);
     padding: 20px 0;
+    flex-wrap: wrap;
 
 }
 
 footer #footer-footer .footer-footer-wrapper .title {
-    color: var(--bg-white)
+    color: var(--gray);
+    font-size: 15px;
+    font-weight: 400px;
+    text-decoration: none;
+    letter-spacing: -0.1px;
+    line-height: 26px;
 }
 
 footer #footer-footer .footer-footer-wrapper ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
 
 footer #footer-footer .footer-footer-wrapper ul li a {
     text-decoration: none;
     color: var(--bg-white);
+}
+
+footer #footer-footer .footer-footer-wrapper ul li a:hover{
+    text-decoration: none;
+    color: var(--primary);
 }
