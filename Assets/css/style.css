@@ -78,6 +78,7 @@ header #header .header-wrapper .header-navbar .btn {
 @media (max-width: 768px) {
     header #header {
         border-bottom: 1px solid white;
+        padding: 8px 0;
     }
 
     header #header .header-wrapper .header-navbar {
@@ -104,9 +105,8 @@ header #header .header-wrapper .header-navbar .btn {
 
 
 /* topContent */
-
 main #topContent {
-    padding: 140px 0;
+    padding: 32px 0 140px 0;
     background-color: var(--bg-dark);
 }
 
@@ -134,7 +134,6 @@ main #topContent .topContent-wrapper .topContent-description .topContent-text {
     line-height: 30px;
     letter-spacing: -0.2px;
     font-weight: 400;
-
 }
 
 
@@ -147,7 +146,6 @@ main #topContent .topContent-wrapper .topContent-description .topContent-btn a {
     display: flex;
     align-items: center;
     gap: 10px;
-
 }
 
 
@@ -158,8 +156,6 @@ main #topContent .topContent-wrapper .topcontent-img {
 
 main #topContent .topContent-wrapper .topcontent-img img {
     border-radius: 8px;
-
-
 }
 
 
@@ -182,10 +178,8 @@ main #topContent .topContent-wrapper .topcontent-img #play {
 }
 
 @media (max-width: 768px) {
-
     main #topContent {
-        padding: 24px 0;
-
+        padding: 16px 0;
     }
 
     main #topContent .topContent-wrapper {
@@ -195,11 +189,12 @@ main #topContent .topContent-wrapper .topcontent-img #play {
     main #topContent .topContent-wrapper .topContent-description .topContent-title {
         font-size: 32px;
         line-height: 30px;
-        margin-top: 16px;
+        margin-top: 12px;
     }
 
     main #topContent .topContent-wrapper .topContent-description .topContent-text {
-        margin-top: 16px;
+        margin-top: 12px;
+        font-size: 15px;
         line-height: 25px;
     }
 
@@ -209,7 +204,7 @@ main #topContent .topContent-wrapper .topcontent-img #play {
 
     main #topContent .topContent-wrapper .topContent-description .topContent-btn a {
         text-decoration: none;
-        margin-top: 16px;
+        margin-top: 12px;
         font-size: 18px;
         letter-spacing: -0.9px;
 
@@ -221,7 +216,6 @@ main #topContent .topContent-wrapper .topcontent-img #play {
 }
 
 /* brand */
-
 main #brand {
     padding: 90px 0;
     border-bottom: 1px solid #e6ecf1;
@@ -243,8 +237,19 @@ main #brand .brand-wrapper img:hover {
 
 @media (max-width:768px) {
 
+    main #brand {
+        padding: 20px 0;
+    }
+
     main #brand .brand-wrapper {
         overflow-x: auto;
+        padding: 30px 0;
+      
+    }
+
+    main #brand .brand-wrapper img {
+        margin-right: 20px;
+        margin-left: 5px;
     }
 }
 
