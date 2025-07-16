@@ -263,7 +263,7 @@ main #info {
 main #info .info-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     gap: 30px;
 }
 
@@ -271,7 +271,9 @@ main #info .info-wrapper .info-card {
     display: flex;
     gap: 25px;
     align-items: start;
-
+    background-color: var(--bg-light);
+    padding: 24px;
+    cursor: pointer;
 }
 
 main #info .info-wrapper .info-card .info-img span i {
@@ -299,9 +301,15 @@ main #info .info-wrapper .info-card .info-text .info-description {
 
 @media (max-width:768px) {
 
+     main #info  {
+        padding: 30px 0;
+    }
+
     main #info .info-wrapper {
         flex-direction: column;
+        justify-content: center;
     }
+
 }
 
 /* Advanced */
