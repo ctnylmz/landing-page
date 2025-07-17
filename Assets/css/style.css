@@ -244,7 +244,7 @@ main #brand .brand-wrapper img:hover {
     main #brand .brand-wrapper {
         overflow-x: auto;
         padding: 30px 0;
-      
+
     }
 
     main #brand .brand-wrapper img {
@@ -301,7 +301,7 @@ main #info .info-wrapper .info-card .info-text .info-description {
 
 @media (max-width:768px) {
 
-     main #info  {
+    main #info {
         padding: 30px 0;
     }
 
@@ -348,7 +348,6 @@ main #advanced .advanced-wrapper .advanced-context .description {
 }
 
 
-
 main #advanced .advanced-wrapper .advanced-context .btn a {
     display: flex;
     align-items: center;
@@ -372,14 +371,34 @@ main #advanced .advanced-wrapper .advanced-context .btn i {
 
 
 @media (max-width:768px) {
+    main #advanced {
+        padding: 0;
+        background-color: var(--bg-white);
+    }
 
     main #advanced .advanced-wrapper {
         flex-direction: column;
+        gap: 16px;
     }
 
     main #advanced .advanced-wrapper .advanced-img img {
         width: 100%;
     }
+
+    main #advanced .advanced-wrapper .advanced-context .title {
+        font-size: 21px;
+        letter-spacing: 1px;
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
+
+    main #advanced .advanced-wrapper .advanced-context .description {
+        font-size: 17px;
+        letter-spacing: 0px;
+        line-height: 20px;
+        margin-bottom: 16px;
+    }
+
 }
 
 /* feature */
@@ -418,8 +437,6 @@ main #feature .feature-wrapper .feature-context .description {
     color: #161c2db3;
 }
 
-
-
 main #feature .feature-wrapper .feature-context .btn a {
     display: flex;
     align-items: center;
@@ -444,12 +461,34 @@ main #feature .feature-wrapper .feature-context .btn i {
 
 @media (max-width:768px) {
 
+    main #feature {
+        padding: 30px 0 40px 0;
+    }
+
     main #feature .feature-wrapper {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 16px;
     }
 
     main #feature .feature-wrapper .feature-img img {
         width: 100%;
+    }
+
+    main #feature .feature-wrapper .feature-context .title {
+        font-size: 21px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 26px;
+        margin-bottom: 16px;
+
+    }
+
+    main #feature .feature-wrapper .feature-context .description {
+        font-size: 17px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        line-height: 20px;
+        margin-bottom: 16px;
     }
 }
 
