@@ -21,7 +21,7 @@ body {
 .container {
     max-width: 1110px;
     margin: 0 auto;
-    width: 95%;
+    width: 93%;
 }
 
 /* Header */
@@ -530,15 +530,12 @@ main #price .price-wrapper {
     gap: 30px;
 }
 
-main #price .price-wrapper .price-card {
-    background-color: white;
-    padding: 20px 40px;
-}
 
 main #price .price-wrapper .price-card {
     background-color: white;
     padding: 35px 50px;
     border-radius: 8px;
+
 }
 
 main #price .price-wrapper .price-card .title {
@@ -563,11 +560,12 @@ main #price .price-wrapper .price-card .price span {
 main #price .price-wrapper .price-card .list ul {
     list-style: none;
     margin-bottom: 30px;
+
 }
 
 main #price .price-wrapper .price-card .list ul li {
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 10px;
     margin-bottom: 15px;
 }
@@ -630,17 +628,61 @@ main #price .price-wrapper .price-card .footer p {
 
 @media (max-width:768px) {
 
-    main #price .price-wrapper {
-        flex-direction: column;
+    main #price {
+        padding: 40px 0 50px 0;
+        background-color: var(--bg-light);
     }
-}
 
+
+    main #price .price-wrapper {
+        overflow-x: auto;
+        padding-bottom: 20px;
+        padding-right: 20px;
+    }
+
+    main #price .price-content {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    main #price .price-content .title {
+        font-size: 21px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+
+    main #price .price-content .description {
+        font-size: 17px;
+        letter-spacing: 0px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+
+    main #price .price-wrapper .price-card {
+        min-width: 190px;
+        text-align: center;
+    }
+
+
+    main #price .price-wrapper .price-card .btn a {
+        letter-spacing: -1.2px;
+        line-height: 0px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+}
 
 
 /* Comment */
 
 main #comment {
-    padding: 0px 0 130px 0;
+    padding: 0px 0 90px 0;
     background-color: var(--bg-light);
 }
 
@@ -674,9 +716,33 @@ main #comment .comment-wrapper .card .name {
 }
 
 @media (max-width:768px) {
+    main #comment {
+        border-top: 1px solid white;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
 
     main #comment .comment-wrapper {
-        flex-direction: column;
+        overflow-x: auto;
+        padding-bottom: 40px;
+        gap: 20px;
+        padding-right: 50px;
+        padding-left: 10px;
+    }
+
+    main #comment .comment-wrapper .card {
+        min-width: 300px;
+        text-align: center;
+    }
+
+    main #comment .comment-wrapper .card .title {
+        font-size: 21px;
+        margin-bottom: 20px;
+        letter-spacing: -0.5px;
+        line-height: 30px;
+        color: var(--bg-dark);
+        -webkit-line-clamp: none;
     }
 }
 
@@ -687,7 +753,6 @@ main #comment .comment-wrapper .card .name {
 footer #footer-header {
     padding: 60px 0 70px 0;
     background-color: var(--bg-dark);
-
 }
 
 footer #footer-header .footer-header-wrapper {
@@ -731,10 +796,8 @@ footer #footer-footer .footer-footer-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid var(--bg-light);
     padding: 20px 0;
     flex-wrap: wrap;
-
 }
 
 footer #footer-footer .footer-footer-wrapper .title {
@@ -760,4 +823,17 @@ footer #footer-footer .footer-footer-wrapper ul li a {
 footer #footer-footer .footer-footer-wrapper ul li a:hover {
     text-decoration: none;
     color: var(--primary);
+}
+
+@media (max-width:768px) {
+    footer #footer-header {
+        padding: 70px 0 30px 0;
+    }
+
+    footer #footer-footer .footer-footer-wrapper {
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+
 }
