@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -17,6 +18,7 @@ header {
 .header-wrapper {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .header-wrapper .header-menu ul {
@@ -53,31 +55,33 @@ header {
     }
 
     .header-wrapper .header-menu {
-        display: none;
+        max-height: 0px;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        top: 40px;
     }
 
+    .header-wrapper .header-menu ul {
+        flex-direction: column;
+        background-color: red;
+    }
 
-
+      .header-wrapper .header-menu ul li{
+        margin: 10px 0 5px 0;
+    }
 }
+
 
 /* Home */
 
 #Home {
     padding: 182px 0;
-   background: linear-gradient(rgba(31, 35, 39, 0.6), rgba(31, 35, 39, 0.9)), url("/assets/img/Home.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: radial-gradient(ellipse at center, rgba(31, 35, 39, 0.6) 0%, rgba(31, 35, 39, 0.9) 70%, rgba(31, 35, 39, 1) 100%), url("../img/Home.jpg");
 }
 
 #Home .home-context {
     max-width: 746px;
-}
-
-#Home .home-context .small-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
 }
 
 #Home .home-context .small-title {
@@ -105,5 +109,76 @@ header {
 
 #Home .home-context .btn {
     margin-top: 30px;
+
+}
+
+#Home .home-context .btn button {
+    margin-top: 30px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    border-radius: 40px;
+    cursor: pointer;
+
+    background-color: #E11B19;
+}
+
+#Home .home-context .btn button span {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    color: white;
+}
+
+#Home .home-context .btn button i {
+    color: white;
+    font-size: 16px;
+}
+
+/* Iconfeature */
+#Iconfeature {
+    background-color: #191C1F;
+    padding: 60px 0;
+}
+
+#Iconfeature .Iconfeature-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+}
+
+#Iconfeature .Iconfeature-wrapper ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Iconfeature .Iconfeature-wrapper ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#Iconfeature .Iconfeature-wrapper ul li .big-title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+#Iconfeature .Iconfeature-wrapper ul li .small-title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+@media (max-width:768px) {
+    #Iconfeature .Iconfeature-wrapper ul {
+      flex-direction: column;
+    }
 
 }
