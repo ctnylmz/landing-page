@@ -114,7 +114,6 @@ header {
 }
 
 #Home .home-context .btn button {
-    margin-top: 30px;
     padding: 20px;
 
     display: flex;
@@ -138,6 +137,25 @@ header {
 #Home .home-context .btn button i {
     color: white;
     font-size: 16px;
+}
+
+@media (max-width:768px) {
+
+    #Home {
+        padding: 120px 0;
+        background: radial-gradient(ellipse at center, rgba(31, 35, 39, 0.6) 0%, rgba(31, 35, 39, 0.9) 70%, rgba(31, 35, 39, 1) 100%), url("../img/Home.jpg");
+    }
+
+    #Home .home-context {
+        text-align: center;
+    }
+
+    #Home .home-context .btn {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
 }
 
 /* Iconfeature */
@@ -169,6 +187,7 @@ header {
     font-size: 36px;
     font-weight: bold;
     line-height: 40px;
+
 }
 
 #Iconfeature .Iconfeature-wrapper ul li .small-title {
@@ -178,9 +197,35 @@ header {
 }
 
 @media (max-width:768px) {
-    #Iconfeature .Iconfeature-wrapper ul {
-        flex-direction: column;
+
+    #Iconfeature {
+        padding: 0px 0;
+
     }
+
+    #Iconfeature .Iconfeature-wrapper ul {
+        overflow-x: auto;
+
+    }
+
+    #Iconfeature .Iconfeature-wrapper ul li {
+        margin: 0 60px;
+        padding: 60px 0;
+    }
+
+    #Iconfeature .Iconfeature-wrapper ul li .big-title {
+        font-size: 24px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    #Iconfeature .Iconfeature-wrapper ul li .small-title {
+        font-size: 20px;
+        font-weight: bold;
+        white-space: nowrap;
+
+    }
+
 
 }
 
@@ -226,6 +271,22 @@ header {
     gap: 17px;
 }
 
+@media (max-width:768px) {
+
+    #Media-Feature-1 {
+        padding: 60px 0;
+    }
+
+
+    #Media-Feature-1 .Media-Feature-1-wrapper {
+        flex-direction: column;
+    }
+
+    #Media-Feature-1 .Media-Feature-1-wrapper .img img {
+        width: 100%;
+    }
+}
+
 /* Media-Feature-2 */
 #Media-Feature-2 {
     background-color: #191C1F;
@@ -267,9 +328,27 @@ header {
     margin-top: 10px;
 }
 
+@media (max-width:768px) {
+
+    #Media-Feature-2 {
+        padding: 60px 0;
+    }
+
+    #Media-Feature-2 .wrapper {
+        flex-direction: column-reverse;
+
+    }
+
+    #Media-Feature-2 .wrapper .img img {
+        width: 100%;
+    }
+}
+
 /* Banner */
 #banner {
     background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 80px 0;
     color: white;
 }
@@ -333,6 +412,13 @@ header {
     font-size: 16px;
 }
 
+@media (max-width:768px) {
+    #banner {
+        padding: 120px 0;
+        color: white;
+    }
+}
+
 /* Footer */
 footer {
     background-color: #14171A;
@@ -359,7 +445,7 @@ footer .wrapper .sosical ul {
     color: white;
 }
 
-footer .wrapper .sosical ul li{
+footer .wrapper .sosical ul li {
     cursor: pointer;
 }
 
@@ -367,12 +453,17 @@ footer .wrapper .sosical ul li{
 footer .wrapper .sosical ul li i {
     width: 30px;
     height: 30px;
-    display: flex; /* ikonun ortalanması için */
+    display: flex;
+    /* ikonun ortalanması için */
     align-items: center;
     justify-content: center;
-    background-color: white; /* arka plan rengi */
-    color: black; /* ikon rengi, beyaz arka planda görünür olması için */
+    background-color: white;
+    /* arka plan rengi */
+    color: black;
+    /* ikon rengi, beyaz arka planda görünür olması için */
     border: 1px solid white;
-    border-radius: 50%; /* yuvarlak yapmak için */
-    font-size: 16px; /* ikon boyutu, isteğe göre ayarla */
+    border-radius: 50%;
+    /* yuvarlak yapmak için */
+    font-size: 16px;
+    /* ikon boyutu, isteğe göre ayarla */
 }
