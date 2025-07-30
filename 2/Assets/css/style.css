@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -67,7 +68,7 @@ header {
         background-color: red;
     }
 
-      .header-wrapper .header-menu ul li{
+    .header-wrapper .header-menu ul li {
         margin: 10px 0 5px 0;
     }
 }
@@ -178,7 +179,200 @@ header {
 
 @media (max-width:768px) {
     #Iconfeature .Iconfeature-wrapper ul {
-      flex-direction: column;
+        flex-direction: column;
     }
 
+}
+
+/* Media-Feature-1 */
+#Media-Feature-1 {
+    background-color: #1F2327;
+    padding: 180px 0 60px 0;
+}
+
+#Media-Feature-1 .Media-Feature-1-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 123px;
+    color: white;
+}
+
+#Media-Feature-1 .Media-Feature-1-wrapper .img {
+    max-width: 540px;
+    max-height: 376px;
+}
+
+#Media-Feature-1 .Media-Feature-1-wrapper .context .small-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#Media-Feature-1 .Media-Feature-1-wrapper .context .big-title {
+    margin-top: 5px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+#Media-Feature-1 .Media-Feature-1-wrapper .context ul {
+    list-style: none;
+    margin-top: 25px;
+}
+
+#Media-Feature-1 .Media-Feature-1-wrapper .context ul li {
+    display: flex;
+    gap: 17px;
+}
+
+/* Media-Feature-2 */
+#Media-Feature-2 {
+    background-color: #191C1F;
+    color: white;
+    padding: 180px 0 60px 0;
+}
+
+#Media-Feature-2 .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 125px;
+}
+
+#Media-Feature-2 .wrapper .img img {
+    max-width: 540px;
+    max-height: 360px;
+}
+
+
+#Media-Feature-2 .context .small-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+#Media-Feature-2 .context .big-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 5px;
+}
+
+
+#Media-Feature-2 .context .text {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+/* Banner */
+#banner {
+    background-image: url("../img/banner.png");
+    padding: 80px 0;
+    color: white;
+}
+
+#banner .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 746px;
+}
+
+
+#banner .wrapper .big-title {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+#banner .wrapper .small-title {
+    margin-top: 5px;
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: bold;
+}
+
+#banner .wrapper .text {
+    margin-top: 10px;
+}
+
+#banner .wrapper .btn {
+    margin-top: 30px;
+}
+
+#banner .wrapper .btn button {
+    margin-top: 30px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+
+    background-color: #E11B19;
+}
+
+#banner .wrapper .btn button span {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    color: white;
+}
+
+#banner .wrapper .btn button i {
+    color: white;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #14171A;
+    padding: 40px 0;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .wrapper .sosical ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    color: white;
+}
+
+footer .wrapper .sosical ul li{
+    cursor: pointer;
+}
+
+
+footer .wrapper .sosical ul li i {
+    width: 30px;
+    height: 30px;
+    display: flex; /* ikonun ortalanması için */
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* arka plan rengi */
+    color: black; /* ikon rengi, beyaz arka planda görünür olması için */
+    border: 1px solid white;
+    border-radius: 50%; /* yuvarlak yapmak için */
+    font-size: 16px; /* ikon boyutu, isteğe göre ayarla */
 }
