@@ -38,6 +38,16 @@ header .wrapper {
     display: none;
 }
 
+.mobile-icon button {
+    border: none;
+}
+
+.mobile-icon button i {
+    cursor: pointer;
+    color: var(--very-dark-blue);
+    font-size: 20px;
+}
+
 header .wrapper nav ul {
     display: flex;
     list-style: none;
@@ -166,13 +176,13 @@ main #news .wrapper .sidebar-news .wrapper .sidebar-news-title {
 
 }
 
-main #news .wrapper .sidebar-news .wrapper .card:not(:last-child)  {
+main #news .wrapper .sidebar-news .wrapper .card:not(:last-child) {
     border-bottom: 1px solid #999;
     padding-bottom: 16px;
 }
 
-main #news .wrapper .sidebar-news .wrapper .card:not(:nth-child(2))  {
-     padding-top: 16px;
+main #news .wrapper .sidebar-news .wrapper .card:not(:nth-child(2)) {
+    padding-top: 16px;
 }
 
 
@@ -197,6 +207,11 @@ main #news .wrapper .sidebar-news .wrapper .card .description {
         display: flex;
         flex-direction: column;
     }
+
+    main #news .wrapper .sidebar-news {
+
+        max-width: 100%;
+    }
 }
 
 /* bottom-news */
@@ -205,34 +220,50 @@ main #news .wrapper .sidebar-news .wrapper .card .description {
     padding: 32px 0;
 }
 
-#bottom-news .wrapper{
+#bottom-news .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#bottom-news .wrapper .card{
+#bottom-news .wrapper .card {
     display: flex;
     gap: 32px;
     align-items: center;
 }
 
-#bottom-news .wrapper .card img{
+#bottom-news .wrapper .card img {
     height: 100px;
 }
 
-#bottom-news .wrapper .content .number{
+#bottom-news .wrapper .content .number {
     font-size: 24px;
     color: var(--grayish-blue);
     font-weight: 800;
 }
 
-#bottom-news .wrapper .content .title{
+#bottom-news .wrapper .content .title {
     font-weight: 700;
 }
 
-#bottom-news .wrapper .content .description{
+#bottom-news .wrapper .content .description {
     font-size: 12px;
     color: var(--dark-grayish-blue);
     font-weight: 800;
+}
+
+@media (max-width:768px) {
+    #bottom-news .wrapper {
+        flex-direction: column;
+    }
+
+    #bottom-news .wrapper .card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #bottom-news .wrapper .card img {
+        width: 100px;
+        object-fit: cover;
+    }
 }
