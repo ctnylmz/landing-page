@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Arka Plan: Tasarımındaki koyu lacivert tona uyumlu yuvarlatılmış kare -->
+  <rect width="512" height="512" rx="128" fill="#0f172a"/>
+  
+  <!-- Yapay Zeka ve İçerik Üretimini Temsil Eden Sihirli Kalem/Parıltı Figürü -->
+  <g fill="none" stroke="#6366f1" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Kalem / Dijital Çizgi Gövdesi -->
+    <path d="M180 332L332 180M332 180l42 42M332 180l-42-42" stroke="#a855f7"/>
+    <!-- Roket/Gelişim Efekti Veren Alt Çizgiler -->
+    <path d="M140 372l-40 40M200 392l-20 20M120 312l-20 20" stroke="#6366f1" stroke-width="24"/>
+  </g>
+
+  <!-- Yapay Zeka Kıvılcımları / Sihirli Dokunuş (Görseldeki mor/mavi tonlarda) -->
+  <path d="M380 100l10 25 25 10-25 10-10 25-10-25-25-10 25-10z" fill="#38bdf8"/>
+  <path d="M440 180l6 15 15 6-15 6-6 15-6-15-15-6 15-6z" fill="#a855f7"/>
+  <path d="M290 80l6 15 15 6-15 6-6 15-6-15-15-6 15-6z" fill="#6366f1"/>
+</svg>
