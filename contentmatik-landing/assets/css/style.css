@@ -90,7 +90,6 @@ body {
 }
 
 
-
 /* =========================
    Hero STYLES
 ========================= */
@@ -168,7 +167,6 @@ body {
 }
 
 
-
 /* =========================
    BRAND STYLES
 ========================= */
@@ -193,7 +191,7 @@ body {
    FEATURES STYLES
 ========================= */
 .features {
-    padding: 90px 0 130px 0;
+    padding-top: 90px;
 }
 
 .features .features-wrapper {
@@ -208,7 +206,7 @@ body {
 }
 
 .features .features-item .content {
-      max-width: 270px;
+    max-width: 270px;
 }
 
 .features .features-item .content .title {
@@ -217,7 +215,7 @@ body {
     line-height: 32px;
     letter-spacing: -0.5px;
     color: #161C2D;
-     margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .features .features-item .content .description {
@@ -228,48 +226,59 @@ body {
     letter-spacing: -0.2px;
 }
 
-
-/*
-
-.header {
-    padding-top: 16px;
-    display: flex;
-    align-items: center;
-    background-color: var(--bg-dark);
-    color: white;
+/* =========================
+   Advanced STYLES
+========================= */
+.advanced {
+    padding: 130px 0 130px 0;
 }
 
-.header .header-wrapper {
+.advanced .advanced-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
 }
 
-.header .header-right {
-    display: flex;
-    gap: 40px;
-    align-items: center;
+.advanced .advanced-wrapper img {
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+    filter: drop-shadow(0px 31px 34px rgba(0, 0, 0, 0.0942963));
+}
+
+.advanced .advanced-wrapper .content {
+    max-width: 435px;
+}
+
+.advanced .advanced-wrapper .content .title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.2px;
+    margin-bottom: 20px;
+    color: var(--dark);
 
 }
 
-.header .menu {
-    display: flex;
-    gap: 45px;
-    list-style: none;
+.advanced .advanced-wrapper .content .description {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    margin-bottom: 35px;
+    color: rgba(22, 28, 45, .70);
+
 }
 
-.header .link {
-    font-size: 15px;
-    letter-spacing: -0.1px;
+.advanced .advanced-wrapper .content .start-btn a {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: -1.2px;
     text-decoration: none;
-    color: white;
 }
 
-.header .start-btn {
-  color: white;
-  text-decoration: none;
-  background-color: var(--primary);
-  padding: 12px 24px;
+.advanced .advanced-wrapper .content .start-btn span {
+    display: inline-block;
+    padding-right: 10px;
 }
-*/
