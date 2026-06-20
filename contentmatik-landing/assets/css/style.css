@@ -465,3 +465,114 @@ body {
     color: rgba(22, 28, 45, .70);
 
 }
+
+
+/* =========================
+   Comment STYLES
+========================= */
+
+.comment {
+    background-color: #ECF2F7;
+    padding: 50px 0 130px 0;
+}
+
+.comment .comment-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment .comment-item {
+    max-width: 500px;
+}
+
+.comment .description {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+
+.comment .title {
+    font-size: 17px;
+    color: rgba(22, 28, 45, .70);
+    font-weight: 500;
+}
+
+
+/* =========================
+   Footer STYLES
+========================= */
+
+.footer {
+
+    background-color: #161C2D;
+
+}
+
+.footer .footer-top {
+    display: flex;
+    gap: 45px;
+    margin-bottom: 50px;
+    padding: 120px 0 90px 0;
+}
+
+
+.footer .footer-top .footer-item .title {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .65);
+    margin-bottom: 20px;
+}
+
+.footer .footer-top .footer-item ul {
+    list-style: none;
+}
+
+.footer .footer-top .footer-item ul li {
+    padding-bottom: 15px;
+}
+
+.footer .footer-top .footer-item ul li:last-child {
+    padding-bottom: 0;
+}
+
+.footer .footer-top .footer-item ul li a {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+.footer .footer-bottom {
+    padding: 30px 0;
+    border-top: 1px solid #292F41;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer-bottom .text {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .65);
+}
+
+.footer .footer-bottom ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer .footer-bottom li a {
+    text-decoration: none;
+}
+
+.footer .footer-bottom a:hover svg path,
+.footer .footer-bottom a:hover svg circle  {
+    fill:var(--primary);
+}
