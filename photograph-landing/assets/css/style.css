@@ -1,0 +1,354 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* =========================
+   HOME STYLES
+========================= */
+
+.header {
+    background:
+        linear-gradient(rgba(25, 28, 31, 0.9), rgba(25, 28, 31, 0.7)), url("../images/home.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.header .logo {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.header .content {
+    padding-top: 125px;
+    max-width: 746px;
+}
+
+.header .content .subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header .content .title {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header .content .description {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-transform: lowercase;
+    color: white;
+}
+
+
+.header .content .header-btn {
+    margin-top: 30px;
+    text-decoration: none;
+    background-color: #E11B19;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.header .content .header-btn:hover {
+    background-color: black;
+}
+
+.header .content .header-btn span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
+
+/* =========================
+   iconfeature STYLES
+========================= */
+
+.iconfeature {
+    background-color: #191C1F;
+    color: white;
+    padding: 60px 0;
+}
+
+.iconfeature .iconfeature-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.iconfeature .iconfeature-wrapper .card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.iconfeature .iconfeature-wrapper .icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.iconfeature .iconfeature-wrapper .card .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconfeature .iconfeature-wrapper .card span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+}
+
+/* =========================
+   iconfeature STYLES
+========================= */
+
+.media {
+    padding: 180px 0 60px 0;
+    background-color: #1F2327;
+}
+
+.media .media-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 123px;
+}
+
+
+
+
+.media .media-wrapper .media-content {
+    max-width: 443px;
+}
+
+.media .media-wrapper .media-content .small-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+.media .media-wrapper .media-content .title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.media .media-wrapper .media-content .list {
+    margin-top: 25px;
+}
+
+.media .media-wrapper .media-content .list li {
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.media .media-wrapper .media-content .list li svg {
+    width: 20px;
+    height: 16px;
+}
+
+.media .media-wrapper .media-content .list span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* =========================
+   feature STYLES
+========================= */
+
+.feature {
+    padding: 180px 0 60px 0;
+    background-color: #191C1F;
+}
+
+.feature .feature-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 125px;
+}
+
+.feature .feature-wrapper .feature-content {
+    max-width: 443px;
+}
+
+
+.feature .feature-wrapper .feature-content .small-title {
+    color: white;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.feature .feature-wrapper .feature-content .title {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.feature .feature-wrapper .feature-content .description {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-transform: lowercase;
+    margin-top: 10px;
+}
+
+/* =========================
+   banner STYLES
+========================= */
+.banner {
+    padding: 80px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/banner.png");
+
+}
+
+.banner .banner-wrapper {
+    max-width: 746px;
+    margin: 0 auto;
+}
+
+.banner .small-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+
+}
+
+.banner .title {
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0;
+    text-transform: lowercase;
+    margin-top: 5px;
+}
+
+
+.banner .description {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-transform: lowercase;
+    margin-top: 10px;
+}
+
+
+.banner .banner-btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 15px;
+    margin-top: 30px;
+    background-color: #E82E2C;
+    color: white;
+    border-radius: 40px;
+    padding: 20px;
+
+}
+
+.banner .banner-btn span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* =========================
+   banner STYLES
+========================= */
+
+.footer {
+    padding: 40px 0;
+    background-color: #14171A;
+}
+
+.footer .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-wrapper .list {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
