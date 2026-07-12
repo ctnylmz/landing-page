@@ -94,12 +94,54 @@ body {
 }
 
 @media screen and (max-width:768px) {
+    .header {
+        position: relative;
+    }
+
     .header .header-right {
+        display: none;
+    }
+
+    .header .header-right.active {
+        display: block;
+    }
+
+    .header .header-right .menu {
+        position: absolute;
+        flex-direction: column;
+        align-items: start;
+        top: 60px;
+        left: 0px;
+        background-color: #0133bc;
+        width: 100%;
+        gap: 0px;
+        padding: 10px 0;
+    }
+
+    .header .header-right .menu li {
+        width: 100%;
+    }
+
+    .header .header-right .menu a {
+        width: 100%;
+        margin-top: 8px;
+        padding: 0 8px;
+        display: block;
+    }
+
+    .header .header-right .menu a:hover {
+        background-color: red;
+        cursor: pointer;
+        padding: 4px 8px;
+    }
+
+    .header .header-right .start-btn {
         display: none;
     }
 
     .header .mobile-btn {
         display: block;
+        cursor: pointer;
     }
 }
 
@@ -184,6 +226,42 @@ body {
     cursor: pointer;
 }
 
+.hero .video-popup {
+    position: fixed;
+    background: black;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.hero .video-popup.active {
+    display: flex;
+}
+
+.hero .video {
+    height: 600px;
+}
+
+
+.hero .closeIcon {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+
+
 @media screen and (max-width:768px) {
     .hero {
         padding-top: 50px;
@@ -209,6 +287,12 @@ body {
     .hero .hero-left .start-btn a {
         font-size: 15px;
     }
+
+    .hero .video {
+        height: 350px;
+        width: 80%;
+    }
+
 }
 
 
