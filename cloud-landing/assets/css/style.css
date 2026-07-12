@@ -1,0 +1,79 @@
+/* - Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
+- Dark Blue (main background): hsl(218, 28%, 13%)
+- Dark Blue (footer background): hsl(216, 53%, 9%)
+- Dark Blue (testimonials background): hsl(219, 30%, 18%)
+- Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
+- Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
+- Light Red (error): hsl(0, 100%, 63%)
+- White: hsl(0, 0%, 100%) */
+
+:root {
+    --footer-blue: hsl(216, 53%, 9%);
+    --darkest-blue: hsl(219, 30%, 18%);
+    --dark-blue: hsl(218, 28%, 13%);
+    --white: hsl(0, 0%, 100%);
+    --blue: hsl(198, 60%, 50%);
+    --cyan: hsl(176, 68%, 64%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* 
+   
+    background-color: var(--dark-blue);
+    
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.5;
+    */
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 94%;
+}
+
+
+.header {
+
+    background-color: var(--dark-blue);
+}
+
+.header .header-wrapper {
+    height: 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-wrapper .logo img{
+    display: block;
+}
+
+.header .header-wrapper .menu .menu-list {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+}
+
+.header .header-wrapper .menu .menu-list li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+
+/* */
+
+.hero{
+    height: 100vh;
+}
