@@ -78,6 +78,10 @@ body {
     color: var(--white);
 }
 
+.header .header-right .menu a:hover {
+    color: var(--primary);
+}
+
 .header .header-right .start-btn {
     text-decoration: none;
     background-color: var(--primary);
@@ -86,6 +90,16 @@ body {
     border-radius: 8px;
     font-size: 17px;
     font-weight: 700;
+}
+
+.header .header-right .start-btn a {
+    display: flex;
+    align-items: center;
+
+}
+
+.header .header-right .start-btn:hover {
+    background-color: var(--green);
 }
 
 .header .mobile-btn {
@@ -285,7 +299,12 @@ body {
     }
 
     .hero .hero-left .start-btn a {
-        font-size: 15px;
+        font-size: 17px;
+    }
+
+    .hero .hero-left .start-btn a svg {
+        height: 13px;
+        width: 13px;
     }
 
     .hero .video {
