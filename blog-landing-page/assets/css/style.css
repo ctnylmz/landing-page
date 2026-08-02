@@ -20,7 +20,7 @@ body {
 
 /* Global Finish */
 
-.header{
+.header {
     margin-top: 66px;
 }
 
@@ -117,26 +117,100 @@ body {
     text-decoration: none;
 }
 
-.hero .social.twitter{
+.hero .social.twitter {
     background-color: #47ACDF;
 }
 
-.hero .social.linkedin{
+.hero .social.linkedin {
     background-color: #1275B1;
 }
 
-.hero .social.medium{
+.hero .social.medium {
     background-color: #000000;
 }
 
-.hero .social span{
-   color: white;
-   font-weight: 500;
-   font-size: 12px;
+.hero .social span {
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
 }
-
-
 
 .hero .hero-image {
     display: block;
+}
+
+/* */
+
+.blog {
+    margin-top: 300px;
+}
+
+.blog .blog-categories .categories-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.blog .blog-categories .categories-list .item-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.blog .blog-categories .categories-list .item-link.active {
+    font-size: 24px;
+    color: #D05270;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.blog .blog-categories .categories-list .item-link:hover {
+    color: #D05270;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+/* Blog Card */
+.blog .blog-cards {
+    margin-top: 115px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 75px 20px;
+}
+
+.blog .blog-card {
+    max-width: 590px;
+}
+
+.blog .blog-card .blog-card-image img {
+    width: 100%;
+}
+
+.blog .blog-card .blog-card-content .content-time {
+    font-size: 14px;
+    color: var(--dark-color);
+    font-weight: 600;
+    margin-top: 17px;
+}
+
+.blog .blog-card .blog-card-content .content-title {
+    font-size: 24px;
+    color: #D05270;
+    font-weight: 600;
+    margin-top: 14px;
+}
+
+.blog .blog-card .blog-card-content .content-description {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.blog .blog-card .blog-card-content .content-btn {
+    color: #D05270;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 30px;
+    display: inline-block;
 }
