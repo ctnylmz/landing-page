@@ -1,0 +1,142 @@
+:root {
+    --dark-color: #424242;
+    --blue-color: #5A47AB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Global Finish */
+
+.header{
+    margin-top: 66px;
+}
+
+.header .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+}
+
+.header .header-logo span {
+    font-size: 30px;
+    color: #424242;
+}
+
+.header .header-logo svg {
+    transform: translateY(2px);
+}
+
+.header .list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+}
+
+.header .nav-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.header .nav-link:hover,
+.header .nav-link.active {
+    font-weight: 600;
+    color: var(--blue-color);
+}
+
+/* Header Finish */
+
+.hero {
+    margin-top: 90px;
+}
+
+.hero .hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .hero-content {
+    max-width: 630px;
+}
+
+.hero .content-title {
+    color: #D05270;
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.hero .content-small-title {
+    color: #424242;
+    font-weight: 500;
+    font-size: 52px;
+    margin-top: 12px;
+}
+
+.hero .content-description {
+    font-size: 18px;
+    margin-top: 12px;
+    color: #424242;
+    opacity: 0.8;
+}
+
+.hero .content-socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 36px;
+}
+
+.hero .social {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 22px 50px;
+    text-decoration: none;
+}
+
+.hero .social.twitter{
+    background-color: #47ACDF;
+}
+
+.hero .social.linkedin{
+    background-color: #1275B1;
+}
+
+.hero .social.medium{
+    background-color: #000000;
+}
+
+.hero .social span{
+   color: white;
+   font-weight: 500;
+   font-size: 12px;
+}
+
+
+
+.hero .hero-image {
+    display: block;
+}
