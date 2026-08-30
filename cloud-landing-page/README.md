@@ -5,7 +5,7 @@
 <table align="center">
   <tr>
     <td valign="top">
-      <img src="" width="700">
+      <img src="./assets/image/destop.png" width="700">
     </td>
     <td valign="top">
       <img src="" width="200">
